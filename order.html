@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Form | Mountain Coffee</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/order.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">☕ Mountain Coffee</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="promo.html">Promotions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order.html" class="active">Order</a></li>
+        <li><a href="map.html">Map</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Online Coffee Order Form</h2>
+      <p>Fill in your details to place your order. Fields marked * are required.</p>
+
+      <form id="orderForm" action="#" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+          <legend>Customer Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" required pattern="[A-Za-z\s]+" title="Only letters allowed">
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,11}" title="Enter 10–11 digits">
+
+          <label for="password">Create Password *</label>
+          <input type="password" id="password" name="password" required minlength="6" title="At least 6 characters">
+
+          <input type="hidden" name="form_type" value="coffee_order">
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+
+          <label for="drink">Select Drink *</label>
+          <select id="drink" name="drink" required>
+            <optgroup label="Hot Drinks">
+              <option value="americano">Americano</option>
+              <option value="latte">Latte</option>
+              <option value="mocha">Mocha</option>
+            </optgroup>
+            <optgroup label="Cold Drinks">
+              <option value="iced_latte">Iced Latte</option>
+              <option value="cold_brew">Cold Brew</option>
+            </optgroup>
+          </select>
+
+          <label for="quantity">Quantity *</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" required>
+
+          <div class="radio-group">
+            <span>Choose Size:</span><br>
+            <input type="radio" id="small" name="size" value="small" checked>
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+          </div>
+
+          <div class="checkbox-group">
+            <span>Add-ons:</span><br>
+            <input type="checkbox" id="sugar" name="addon" value="sugar">
+            <label for="sugar">Extra Sugar</label>
+            <input type="checkbox" id="cream" name="addon" value="cream">
+            <label for="cream">Whipped Cream</label>
+            <input type="checkbox" id="ice" name="addon" value="ice">
+            <label for="ice">Extra Ice</label>
+          </div>
+
+          <label for="pickupDate">Pickup Date *</label>
+          <input type="date" id="pickupDate" name="pickupDate" required>
+
+          <label for="sweetness">Sweetness Level</label>
+          <input type="range" id="sweetness" name="sweetness" min="0" max="100" step="10">
+
+          <label for="color">Cup Label Color</label>
+          <input type="color" id="color" name="color" value="#b5651d">
+
+          <label for="photo">Upload a Reference Photo (optional)</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Notes</legend>
+
+          <label for="instructions">Special Instructions</label>
+          <textarea id="instructions" name="instructions" rows="4" placeholder="E.g. no ice, less sugar..."></textarea>
+
+          <label for="promo">Promo Code (optional)</label>
+          <input list="codes" id="promo" name="promo" placeholder="Type or choose">
+          <datalist id="codes">
+            <option value="WELCOME10">
+            <option value="FREEDRINK">
+            <option value="COFFEE2025">
+          </datalist>
+        </fieldset>
+
+        <fieldset class="form-buttons">
+          <input type="submit" value="Submit Order">
+          <input type="reset" value="Reset Form">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mountain Coffee. All rights reserved.</p>
+  </footer>
+</body>
+</html>
