@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coffee Menu - Mountain Coffee</title>
+  <title>IU Coffee Menu</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/menu.css" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">☕ Mountain Coffee</div>
+      <figure class="logo">
+        <img src="assets/img/IU.png" alt="IU Coffee Logo">
+        <h1 class="logo">IU Coffee</h1>
+      </figure>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html" class="active">Menu</a></li>
@@ -22,164 +25,137 @@
     </nav>
   </header>
 
-  <main>
-    <section class="banner">
-      <header>
-        <h2>Our Coffee Menu</h2>
+  <section class="banner"> 
+    <header> 
+      <h2>Our Coffee Menu</h2> 
+      <p>Explore our handcrafted drinks made from ethically sourced beans and premium ingredients.</p> 
+      <a href="#espresso" class="btn">View Our Coffees</a> 
+    </header>
+  </section>
+
+  <main class="menu-layout">
+    <aside>
+      <nav aria-label="Menu Categories">
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="#espresso">Espresso Classics</a></li>
+          <li><a href="#milk">Milk Coffees</a></li>
+          <li><a href="#iced">Iced Coffees</a></li>
+          <li><a href="#special">Specialty Drinks</a></li>
+          <li><a href="#noncoffee">Non-Coffee Options</a></li>
+          <li><a href="#tea">Classic Teas</a></li>
+          <li><a href="#milk-tea">Flavored & Milk Teas</a></li>
+          <li><a href="#iced-tea">Fruit & Iced Teas</a></li>
+          <li><a href="#herbal-tea">Specialty Herbal Teas</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section>
+      <header class="menu-header">
+        <h1>Our Coffee Menu</h1>
         <p>Explore our handcrafted drinks made from ethically sourced beans and premium ingredients.</p>
-        <a href="#espresso" class="btn">View Our Coffees</a>
       </header>
-    </section>
 
-    <section class="menu-category" id="espresso">
-      <h2>☕ Espresso Classics</h2>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <h3>Espresso</h3>
-          <p>A rich, concentrated shot of pure coffee.</p>
-          <span class="price">$3.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Doppio</h3>
-          <p>A double shot of espresso.</p>
-          <span class="price">$3.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Americano</h3>
-          <p>Espresso with added hot water for a smooth taste.</p>
-          <span class="price">$3.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Macchiato</h3>
-          <p>Espresso "stained" with a small amount of milk foam.</p>
-          <span class="price">$3.80</span>
-        </article>
-        <article class="menu-card">
-          <h3>Cortado</h3>
-          <p>Equal parts espresso and steamed milk.</p>
-          <span class="price">$4.00</span>
-        </article>
-      </div>
-    </section>
+      <section id="espresso">
+        <h2>☕ Espresso Classics</h2>
+        <ul class="menu-list">
+          <li><h3>Espresso</h3><p>A rich, concentrated shot of pure coffee.</p><a href="order.html" class="price">$3.00</a></li>
+          <li><h3>Doppio</h3><p>A double shot of espresso.</p><a href="order.html" class="price">$3.50</a></li>
+          <li><h3>Americano</h3><p>Espresso with added hot water for a smooth taste.</p><a href="order.html" class="price">$3.50</a></li>
+          <li><h3>Macchiato</h3><p>Espresso “stained” with a small amount of milk foam.</p><a href="order.html" class="price">$3.80</a></li>
+          <li><h3>Cortado</h3><p>Equal parts espresso and steamed milk.</p><a href="order.html" class="price">$4.00</a></li>
+        </ul>
+      </section>
 
-    <section class="menu-category">
-      <h2>🥛 Milk Coffees</h2>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <h3>Cappuccino</h3>
-          <p>Espresso topped with steamed milk and foam.</p>
-          <span class="price">$4.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Latte</h3>
-          <p>Espresso mixed with more steamed milk and a thin layer of foam.</p>
-          <span class="price">$4.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Flat White</h3>
-          <p>Silky microfoam and espresso, smoother than a cappuccino.</p>
-          <span class="price">$4.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Mocha</h3>
-          <p>Espresso, chocolate, and steamed milk.</p>
-          <span class="price">$5.00</span>
-        </article>
-      </div>
-    </section>
+      <section id="milk">
+        <h2>🥛 Milk Coffees</h2>
+        <ul class="menu-list">
+          <li><h3>Cappuccino</h3><p>Espresso topped with steamed milk and foam.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Latte</h3><p>Espresso mixed with more steamed milk and a thin layer of foam.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Flat White</h3><p>Silky microfoam and espresso, smoother than a cappuccino.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Mocha</h3><p>Espresso, chocolate, and steamed milk.</p><a href="order.html" class="price">$5.00</a></li>
+        </ul>
+      </section>
 
-    <section class="menu-category">
-      <h2>❄️ Iced Coffees</h2>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <h3>Iced Americano</h3>
-          <p>Chilled espresso with cold water and ice.</p>
-          <span class="price">$4.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Iced Latte</h3>
-          <p>Cold milk and espresso served over ice.</p>
-          <span class="price">$4.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Iced Mocha</h3>
-          <p>Chocolate, espresso, milk, and ice — topped with whipped cream.</p>
-          <span class="price">$5.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Cold Brew</h3>
-          <p>Slow-steeped coffee for a smooth, low-acid flavor.</p>
-          <span class="price">$5.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Iced Caramel Macchiato</h3>
-          <p>Vanilla milk, espresso, and caramel drizzle.</p>
-          <span class="price">$5.50</span>
-        </article>
-      </div>
-    </section>
+      <section id="iced">
+        <h2>❄️ Iced Coffees</h2>
+        <ul class="menu-list">
+          <li><h3>Iced Americano</h3><p>Chilled espresso with cold water and ice.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Iced Latte</h3><p>Cold milk and espresso served over ice.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Iced Mocha</h3><p>Chocolate, espresso, milk, and ice — topped with whipped cream.</p><a href="order.html" class="price">$5.50</a></li>
+          <li><h3>Cold Brew</h3><p>Slow-steeped coffee for a smooth, low-acid flavor.</p><a href="order.html" class="price">$5.00</a></li>
+          <li><h3>Iced Caramel Macchiato</h3><p>Vanilla milk, espresso, and caramel drizzle.</p><a href="order.html" class="price">$5.50</a></li>
+        </ul>
+      </section>
 
-    <section class="menu-category">
-      <h2>🍦 Specialty Drinks</h2>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <h3>Affogato</h3>
-          <p>Espresso poured over a scoop of vanilla ice cream.</p>
-          <span class="price">$6.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Irish Coffee</h3>
-          <p>Espresso with Irish cream and whipped topping.</p>
-          <span class="price">$6.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Caramel Latte</h3>
-          <p>Latte with caramel syrup and whipped cream.</p>
-          <span class="price">$5.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Hazelnut Mocha</h3>
-          <p>Mocha with hazelnut syrup for a nutty twist.</p>
-          <span class="price">$5.50</span>
-        </article>
-      </div>
-    </section>
+      <section id="special">
+        <h2>🍦 Specialty Drinks</h2>
+        <ul class="menu-list">
+          <li><h3>Affogato</h3><p>Espresso poured over a scoop of vanilla ice cream.</p><a href="order.html" class="price">$6.00</a></li>
+          <li><h3>Irish Coffee</h3><p>Espresso with Irish cream and whipped topping.</p><a href="order.html" class="price">$6.50</a></li>
+          <li><h3>Caramel Latte</h3><p>Latte with caramel syrup and whipped cream.</p><a href="order.html" class="price">$5.00</a></li>
+          <li><h3>Hazelnut Mocha</h3><p>Mocha with hazelnut syrup for a nutty twist.</p><a href="order.html" class="price">$5.50</a></li>
+        </ul>
+      </section>
 
-    <section class="menu-category">
-      <h2>🫖 Non-Coffee Options</h2>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <h3>Hot Chocolate</h3>
-          <p>Rich cocoa with steamed milk and whipped cream.</p>
-          <span class="price">$4.00</span>
-        </article>
-        <article class="menu-card">
-          <h3>Matcha Latte</h3>
-          <p>Japanese green tea with steamed milk.</p>
-          <span class="price">$4.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Chai Latte</h3>
-          <p>Spiced black tea with milk and cinnamon.</p>
-          <span class="price">$4.50</span>
-        </article>
-        <article class="menu-card">
-          <h3>Tea (Black / Green / Herbal)</h3>
-          <p>Classic brewed teas.</p>
-          <span class="price">$3.00</span>
-        </article>
-      </div>
+      <section id="noncoffee">
+        <h2>🫖 Non-Coffee Options</h2>
+        <ul class="menu-list">
+          <li><h3>Hot Chocolate</h3><p>Rich cocoa with steamed milk and whipped cream.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Matcha Latte</h3><p>Japanese green tea with steamed milk.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Chai Latte</h3><p>Spiced black tea with milk and cinnamon.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Tea (Black / Green / Herbal)</h3><p>Classic brewed teas.</p><a href="order.html" class="price">$3.00</a></li>
+        </ul>
+      </section>
+
+      <section id="tea">
+        <h2>🫖 Classic Teas</h2>
+        <ul class="menu-list">
+          <li><h3>Earl Grey</h3><p>Fragrant black tea infused with bergamot — timeless and elegant.</p><a href="order.html" class="price">$3.50</a></li>
+          <li><h3>English Breakfast</h3><p>Full-bodied black tea blend for a bold, morning kick.</p><a href="order.html" class="price">$3.50</a></li>
+          <li><h3>Jasmine Green Tea</h3><p>Delicate green tea scented with jasmine blossoms for a floral aroma.</p><a href="order.html" class="price">$3.80</a></li>
+          <li><h3>Sencha Green Tea</h3><p>Smooth Japanese green tea with a fresh, grassy flavor.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Chamomile Tea</h3><p>Naturally caffeine-free herbal tea that soothes and relaxes.</p><a href="order.html" class="price">$3.80</a></li>
+        </ul>
+      </section>
+
+      <section id="milk-tea">
+        <h2>🌸 Flavored & Milk Teas</h2>
+        <ul class="menu-list">
+          <li><h3>Matcha Latte</h3><p>Creamy blend of ceremonial-grade matcha and steamed milk.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Thai Milk Tea</h3><p>Sweet and spiced black tea with rich condensed milk — a Southeast Asian classic.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Hokkaido Milk Tea</h3><p>Velvety milk tea with caramel undertones, inspired by Hokkaido’s dairy tradition.</p><a href="order.html" class="price">$4.80</a></li>
+          <li><h3>Rose Milk Tea</h3><p>Aromatic black tea infused with rose petals for a floral twist.</p><a href="order.html" class="price">$4.80</a></li>
+          <li><h3>Taro Milk Tea</h3><p>Purple, creamy, and slightly nutty — the most photogenic favorite.</p><a href="order.html" class="price">$5.00</a></li>
+        </ul>
+      </section>
+
+      <section id="iced-tea">
+        <h2>🍋 Fruit & Iced Teas</h2>
+        <ul class="menu-list">
+          <li><h3>Peach Iced Tea</h3><p>Refreshing black tea blended with juicy peach syrup and ice.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Lemon Honey Tea</h3><p>Zesty lemon and soothing honey — perfect for any season.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Lychee Green Tea</h3><p>Sweet tropical flavor paired with smooth green tea.</p><a href="order.html" class="price">$4.20</a></li>
+          <li><h3>Mango Passionfruit Tea</h3><p>Exotic fruit blend with a tangy-sweet finish.</p><a href="order.html" class="price">$4.50</a></li>
+          <li><h3>Berry Hibiscus Tea</h3><p>Vibrant caffeine-free brew with a tart, floral taste.</p><a href="order.html" class="price">$4.20</a></li>
+        </ul>
+      </section>
+
+      <section id="herbal-tea">
+        <h2>🌿 Specialty Herbal Teas</h2>
+        <ul class="menu-list">
+          <li><h3>Peppermint Tea</h3><p>Cooling and caffeine-free, great for digestion and refreshment.</p><a href="order.html" class="price">$3.80</a></li>
+          <li><h3>Lemongrass Ginger Tea</h3><p>Zesty, aromatic infusion with a natural energy boost.</p><a href="order.html" class="price">$4.00</a></li>
+          <li><h3>Lavender Tea</h3><p>Relaxing floral blend to calm your mind and senses.</p><a href="order.html" class="price">$3.80</a></li>
+        </ul>
+      </section>
     </section>
   </main>
 
   <footer class="site-footer">
-    <section class="footer-content">
-      <p>&copy; 2025 Mountain Coffee. All rights reserved.</p>
-      <nav>
-        <a href="policy.html">Privacy Policy</a> |
-        <a href="contact.html">Contact Us</a>
-      </nav>
-    </section>
+    <p>&copy; 2025 IU Coffee. All rights reserved.</p>
+    <nav><a href="policy.html">Privacy Policy</a></nav>
   </footer>
 </body>
 </html>

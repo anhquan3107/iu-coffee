@@ -60,6 +60,21 @@ header > nav.navbar {
   color: var(--accent-color);
 }
 
+section.banner {
+  background: url('../img/banner-iu.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+section.banner header {
+  max-width: 700px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .btn {
   display: inline-block;
   background: var(--accent-color);
