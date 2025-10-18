@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order Form | Mountain Coffee</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/order.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form | IU Coffee</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/order.css">
 </head>
 <body>
   <header>
@@ -15,11 +15,11 @@
         <h1 class="logo">IU Coffee</h1>
       </figure>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="promo.html">Promotions</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="order.html">Order</a></li>
+        <li><a href="order.html" class="active">Order</a></li>
         <li><a href="map.html">Map</a></li>
       </ul>
     </nav>
@@ -55,6 +55,7 @@
 
           <label for="drink">Select Drink *</label>
           <select id="drink" name="drink" required>
+            <option value="">-- Please select a drink --</option>
             <optgroup label="Espresso Classics">
               <option value="espresso">Espresso</option>
               <option value="doppio">Doppio</option>
@@ -173,12 +174,12 @@
   </main>
 
   <footer class="site-footer">
-    <section class="footer-content">
+    <div class="footer-content">
       <p>&copy; 2025 IU Coffee. All rights reserved.</p>
       <nav>
-        <a href="policy.html">Privacy Policy</a>
+        <a href="policy.html">Privacy Policy</a> 
       </nav>
-    </section>
+    </div>
   </footer>
 </body>
 </html>
