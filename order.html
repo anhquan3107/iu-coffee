@@ -55,14 +55,61 @@
 
           <label for="drink">Select Drink *</label>
           <select id="drink" name="drink" required>
-            <optgroup label="Hot Drinks">
+            <optgroup label="Espresso Classics">
+              <option value="espresso">Espresso</option>
+              <option value="doppio">Doppio</option>
               <option value="americano">Americano</option>
+              <option value="macchiato">Macchiato</option>
+              <option value="cortado">Cortado</option>
+            </optgroup>
+            <optgroup label="Milk Coffees">
+              <option value="cappuccino">Cappuccino</option>
               <option value="latte">Latte</option>
+              <option value="flat_white">Flat White</option>
               <option value="mocha">Mocha</option>
             </optgroup>
-            <optgroup label="Cold Drinks">
+            <optgroup label="Iced Coffees">
+              <option value="iced_americano">Iced Americano</option>
               <option value="iced_latte">Iced Latte</option>
+              <option value="iced_mocha">Iced Mocha</option>
               <option value="cold_brew">Cold Brew</option>
+              <option value="iced_caramel_macchiato">Iced Caramel Macchiato</option>
+            </optgroup>
+            <optgroup label="Specialty Drinks">
+              <option value="affogato">Affogato</option>
+              <option value="irish_coffee">Irish Coffee</option>
+              <option value="caramel_latte">Caramel Latte</option>
+              <option value="hazelnut_mocha">Hazelnut Mocha</option>
+            </optgroup>
+            <optgroup label="Non-Coffee Options">
+              <option value="hot_chocolate">Hot Chocolate</option>
+              <option value="matcha_latte">Matcha Latte</option>
+              <option value="chai_latte">Chai Latte</option>
+            </optgroup>
+            <optgroup label="Classic Teas">
+              <option value="earl_grey">Earl Grey</option>
+              <option value="english_breakfast">English Breakfast</option>
+              <option value="jasmine_green_tea">Jasmine Green Tea</option>
+              <option value="sencha_green_tea">Sencha Green Tea</option>
+              <option value="chamomile_tea">Chamomile Tea</option>
+            </optgroup>
+            <optgroup label="Flavored & Milk Teas">
+              <option value="thai_milk_tea">Thai Milk Tea</option>
+              <option value="hokkaido_milk_tea">Hokkaido Milk Tea</option>
+              <option value="rose_milk_tea">Rose Milk Tea</option>
+              <option value="taro_milk_tea">Taro Milk Tea</option>
+            </optgroup>
+            <optgroup label="Fruit & Iced Teas">
+              <option value="peach_iced_tea">Peach Iced Tea</option>
+              <option value="lemon_honey_tea">Lemon Honey Tea</option>
+              <option value="lychee_green_tea">Lychee Green Tea</option>
+              <option value="mango_passionfruit_tea">Mango Passionfruit Tea</option>
+              <option value="berry_hibiscus_tea">Berry Hibiscus Tea</option>
+            </optgroup>
+            <optgroup label="Specialty Herbal Teas">
+              <option value="peppermint_tea">Peppermint Tea</option>
+              <option value="lemongrass_ginger_tea">Lemongrass Ginger Tea</option>
+              <option value="lavender_tea">Lavender Tea</option>
             </optgroup>
           </select>
 
@@ -125,8 +172,13 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Mountain Coffee. All rights reserved.</p>
+  <footer class="site-footer">
+    <section class="footer-content">
+      <p>&copy; 2025 IU Coffee. All rights reserved.</p>
+      <nav>
+        <a href="policy.html">Privacy Policy</a>
+      </nav>
+    </section>
   </footer>
 </body>
 </html>

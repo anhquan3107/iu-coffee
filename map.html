@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find Us | Mountain Coffee</title>
+  <title>Find Us | IU Coffee</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/map.css" />
 </head>
@@ -15,49 +15,88 @@
         <h1 class="logo">IU Coffee</h1>
       </figure>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="promo.html">Promotions</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="order.html">Order</a></li>
-        <li><a href="map.html">Map</a></li>
+        <li><a href="map.html" class="active">Map</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="map-section">
+    <section class="banner" aria-labelledby="banner-heading">
       <header>
-        <h2>Visit Mountain Coffee</h2>
+        <h2 id="banner-heading">Visit IU Coffee</h2>
         <p>Come enjoy a cup at our cozy café located in the heart of the city.</p>
+        <a href="#location" class="btn">Find Our Location</a>
+      </header>
+    </section>
+
+    <article id="location" class="map-section">
+      <header>
+        <h2>Our Location</h2>
+        <p>We're conveniently located near IU University. Drop by for your coffee fix!</p>
       </header>
 
       <figure class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1316505608092!2d106.79904467583144!3d10.877590057317962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a415a9d221%3A0x550c2b41569376f9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBRdeG7kWMgVOG6vyAtIMSQ4bqhaSBo4buNYyBRdeG7kWMgZ2lhIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1760513665516!5m2!1svi!2s" 
-        width="100%" height="450" 
-        style="border:0;"
-         allowfullscreen="" 
-         loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Google Maps showing IU Coffee location">
         </iframe>  
         <figcaption>Find us on Google Maps</figcaption>
       </figure>
 
-      <address>
-        <p><strong>Mountain Coffee</strong></p>
-        <p>123 Aroma Street, Coffee District, Ho Chi Minh City, Vietnam</p>
-        <p>Phone: <a href="tel:+84123456789">+84 123 456 789</a></p>
-        <p>Email: <a href="mailto:info@mountaincoffee.com">info@mountaincoffee.com</a></p>
+      <address class="card">
+        <h3>IU Coffee</h3>
+        <p>William Shakespear Street, Thủ Đức District</p>
+        <p>Near IU University, Ho Chi Minh City, Vietnam</p>
+        
+        <section class="contact-info">
+          <article class="contact-item">
+            <h3>Phone</h3>
+            <p><a href="tel:+84123456789">+84 123 456 789</a></p>
+          </article>
+          <article class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:info@iucoffee.com">info@iucoffee.com</a></p>
+          </article>
+        </section>
       </address>
-    </section>
+
+      <section class="card" aria-labelledby="hours-heading">
+        <h2 id="hours-heading">Opening Hours</h2>
+        <dl>
+          <dt>Monday - Friday</dt>
+          <dd>7:00 AM - 10:00 PM</dd>
+          
+          <dt>Saturday - Sunday</dt>
+          <dd>8:00 AM - 11:00 PM</dd>
+          
+          <dt>Holidays</dt>
+          <dd>Hours may vary</dd>
+        </dl>
+      </section>
+      
+      <aside class="card">
+        <h3>Public Transportation</h3>
+        <p>We're easily accessible via:</p>
+        <ul>
+          <li>Bus routes: 8, 19, 33</li>
+          <li>10-minute walk from Thu Duc Market</li>
+        </ul>
+      </aside>
+    </article>
   </main>
 
   <footer class="site-footer">
     <section class="footer-content">
-      <p>&copy; 2025 Mountain Coffee. All rights reserved.</p>
-      <nav>
-        <a href="policy.html">Privacy Policy</a> |
-        <a href="contact.html">Contact Us</a>
+      <p>&copy; 2025 IU Coffee. All rights reserved.</p>
+      <nav aria-label="Footer Navigation">
+        <a href="policy.html">Privacy Policy</a> 
       </nav>
     </section>
   </footer>
