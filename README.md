@@ -79,10 +79,10 @@ To view or edit this project, you only need:
 - Use the Live Server extension in VS Code.
 
 ## Credits
-Created by: Phan Tran Anh Quan
-Images: Banner and icons from IU University assets & free-use sources 
+Created by: Phan Tran Anh Quan.  
+Images: Banner and icons from IU University assets & free-use sources.  
 Design Concept: Inspired by Montagne Della Luna
 
-“Where every cup tells a story — brewed with IU spirit.” 
+<p align="center"> <em>"Where every cup tells a story — brewed with IU spirit.”</em></p>
 
 ---
