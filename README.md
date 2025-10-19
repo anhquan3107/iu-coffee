@@ -46,11 +46,12 @@ This project showcases our café, story, mission, and menu — bringing campus c
 
 ## Features
 
-- **Responsive Design** – Looks great on all devices (desktop & mobile).  
-- **Menu Page** – Displays various drink categories with clear descriptions.  
-- **About Section** – Shares the café’s story, mission, and team members.  
-- **Modern Card Layout** – Soft colors, shadows, and rounded edges for a cozy feel.  
-- **Map & Contact** – Helps visitors find and connect with IU Coffee.
+- **Semantic HTML5 structure** with consistent header, nav, main, and footer.  
+- **Responsive CSS** using Grid & Flexbox for both desktop and mobile.  
+- **Interactive form** (labels, select, checkbox, date, color, etc.).  
+- **Modern design** — card layouts, rounded corners, and soft shadows.  
+- **Accessibility** — alt text, readable fonts, focus highlight.  
+- **Meta tags & favicon** for SEO and browser optimization.  
   
 ---
 
